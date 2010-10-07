@@ -19,6 +19,8 @@ set laststatus=2            " always show status bar
 set ruler                   " display the ruler at the bottom of the window
 set wildmenu                " nice tab completion just above the status bar
 
+set history=1000            " remember more than 20 commands/search patterns
+
 " colorscheme desert
 " colorscheme ir_black
 colorscheme railscasts
@@ -38,6 +40,10 @@ endif
 " Quickly open the vim config file in a new tab.
 let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
+
+" Show whitespace
+set listchars=tab:>-,trail:·,eol:$
+nmap <silent> <leader>s :set nolist!<CR>
  
 """ Useful for running vi within irb
 ""
@@ -58,5 +64,7 @@ endif
 
 """ Ruby
 ""
-" From the PeepCode Smashing Into Vim II video
-autocmd BufNewFile,BufRead *_spec.rb compiler rspec
+"
+
+nmap <LEADER>E :s/_eventually//<CR>
+nmap <LEADER>e :s/should/should_eventually/<CR>
