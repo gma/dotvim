@@ -44,11 +44,18 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 " Show whitespace
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
- 
-""" Useful for running vi within irb
-""
-" From http://vimcasts.org/episodes/running-vim-within-irb/
 
+nmap <LEADER>d :NERDTreeToggle<CR>
+
+""" Ruby
+""
+"
+
+nmap <LEADER>E :s/_eventually//<CR>
+nmap <LEADER>e :s/should/should_eventually/<CR>
+ 
+" Useful for running vi within irb
+" From http://vimcasts.org/episodes/running-vim-within-irb/
 if has("autocmd")
   filetype plugin indent on  " enable filetype detection
 
@@ -62,9 +69,3 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
-""" Ruby
-""
-"
-
-nmap <LEADER>E :s/_eventually//<CR>
-nmap <LEADER>e :s/should/should_eventually/<CR>
