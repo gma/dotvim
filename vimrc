@@ -2,7 +2,7 @@ set nocompatible
 
 silent! call pathogen#runtime_append_all_bundles()
 
-set tabstop=8               " default size of a real tab stop
+set tabstop=2               " default size of a real tab stop
 set softtabstop=2           " pressing tab/backspaces inserts/removes 2 chars
 set shiftwidth=2            " the number of spaces used by << and >>
 set expandtab               " insert spaces instead of tabs
@@ -20,6 +20,7 @@ set ruler                   " display the ruler at the bottom of the window
 set wildmenu                " nice tab completion just above the status bar
 
 set history=1000            " remember more than 20 commands/search patterns
+set noswapfile
 
 " colorscheme desert
 " colorscheme ir_black
@@ -27,6 +28,12 @@ colorscheme railscasts
 " colorscheme topfunky-light
 " colorscheme vibrantink
 " colorscheme vividchalk
+
+" Switch windows with Ctrl + a movement key
+nnoremap <C-h> <C-w>h
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-l> <C-w>l
 
 """ Make it easy to modify vim settings on the fly.
 ""
