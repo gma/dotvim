@@ -53,6 +53,7 @@ set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
 
 nmap <LEADER>d :NERDTreeToggle<CR>
+let NERDSpaceDelims=1
 
 """ Ruby
 ""
