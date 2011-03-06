@@ -6,3 +6,5 @@ set guioptions-=r           " hide the scrollbar
 set guifont=Inconsolata:h15
 set lines=32 columns=85     " window dimensions
 
+colorscheme mac_classic
+set colorcolumn=81

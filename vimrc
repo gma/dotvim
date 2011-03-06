@@ -25,9 +25,8 @@ set noswapfile
 " colorscheme desert
 " colorscheme ir_black
 colorscheme railscasts
+" colorscheme mac_classic
 " colorscheme topfunky-light
-" colorscheme vibrantink
-" colorscheme vividchalk
 
 " Switch windows with Ctrl + a movement key
 nnoremap <C-h> <C-w>h
