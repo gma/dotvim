@@ -54,18 +54,35 @@ nmap <silent> <leader>s :set nolist!<CR>
 nmap <LEADER>d :NERDTreeToggle<CR>
 let NERDSpaceDelims=1
 
-""" Ruby
-""
-"
+if has("autocmd")
+  filetype plugin indent on  " enable filetype detection
+endif
 
+" Indentation
+if has("autocmd")
+  autocmd FileType sh setlocal shiftwidth=4
+  autocmd FileType css setlocal shiftwidth=4
+  autocmd FileType python setlocal shiftwidth=4
+endif
+
+" Markdown
+if has("autocmd")
+  autocmd FileType markdown set wrap
+  autocmd FileType markdown set linebreak
+endif
+
+" Ruby
 nmap <LEADER>E :s/_eventually//<CR>
 nmap <LEADER>e :s/should/should_eventually/<CR>
+
+" Web
+if has("autocmd")
+  autocmd FileType haml set nowrap
+endif
  
 " Useful for running vi within irb
 " From http://vimcasts.org/episodes/running-vim-within-irb/
 if has("autocmd")
-  filetype plugin indent on  " enable filetype detection
-
   " Restore cursor position
   "autocmd BufReadPost *
   "  \ if line("'\"") > 1 && line("'\"") <= line("$") |
