@@ -22,8 +22,8 @@ set wildmenu                " nice tab completion just above the status bar
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
 
-set background=light
 colorscheme solarized
+set background=dark
 
 " colorscheme desert
 " colorscheme ir_black
