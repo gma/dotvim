@@ -27,8 +27,8 @@ set colorcolumn=81
 " endif
 
 nmap <leader>1 :set lines=40 columns=85<CR><C-w>o
-nmap <leader>2 :set lines=50 columns=171<CR><C-w>v
-nmap <leader>3 :set lines=60 columns=171<CR><C-w>v
+nmap <leader>2 <C-w>o:set lines=50 columns=171<CR><C-w>v
+nmap <leader>3 <C-w>o:set lines=54 columns=117<CR><leader>d<C-l>
 
 let hostfile=$HOME.'/.vim/gvimrc-'.hostname()
 if filereadable(hostfile)
