@@ -23,7 +23,7 @@ set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
 
 colorscheme solarized
-set background=dark
+set background=light
 
 " colorscheme desert
 " colorscheme ir_black
