@@ -30,7 +30,7 @@ nmap <leader>1 :set columns=85<CR><C-w>o
 nmap <leader>2 <C-w>o:set columns=171<CR><C-w>v
 nmap <leader>3 <C-w>o:set columns=117<CR><leader>d<C-l>
 
-let hostfile=$HOME.'/.vim/gvimrc-'.hostname()
+let hostfile = $HOME . '/.vim/gvimrc-' . substitute(hostname(), "\\..*", "", "")
 if filereadable(hostfile)
   exe 'source ' . hostfile
 endif
