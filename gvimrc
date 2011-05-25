@@ -34,3 +34,9 @@ let hostfile = $HOME . '/.vim/gvimrc-' . substitute(hostname(), "\\..*", "", "")
 if filereadable(hostfile)
   exe 'source ' . hostfile
 endif
+
+function! TallWindow()
+  set lines=54
+endfunction
+command! Tw :call TallWindow()
+command! TallWindow :call TallWindow()
