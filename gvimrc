@@ -8,7 +8,7 @@ set guioptions-=l           " hide the scrollbars
 set guioptions-=L           " hide the scrollbars with vertical split
 set guifont=Inconsolata:h15
 set lines=40 columns=85     " window dimensions
-set relativenumber          " relative line numbers
+set number                  " line numbers
 
 " colorscheme mac_classic
 colorscheme solarized
