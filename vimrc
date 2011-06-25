@@ -10,8 +10,8 @@ set textwidth=72            " right margin to use when wrapping text
 
 set autoindent
 set nowrap                  " disable line wrapping
-" set hlsearch                " incremental highlighting
-set incsearch               " show search matches as you type
+" set hlsearch                " highlight search matches
+set incsearch               " incremental search
 
 set hidden                  " open multiple files in one 'window'
 set number                  " show line numbers
