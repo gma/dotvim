@@ -36,7 +36,7 @@ if filereadable(hostfile)
 endif
 
 function! TallWindow()
-  set lines=54
+  set lines=56
 endfunction
 command! Tw :call TallWindow()
 command! TallWindow :call TallWindow()
