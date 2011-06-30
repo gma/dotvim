@@ -114,3 +114,6 @@ function! OpenChangedFiles()
   endfor
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
+
+" Plugin configuration
+let g:LustyJugglerSuppressRubyWarning = 1
