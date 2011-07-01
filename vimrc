@@ -117,3 +117,4 @@ command! OpenChangedFiles :call OpenChangedFiles()
 
 " Plugin configuration
 let g:LustyJugglerSuppressRubyWarning = 1
+" let g:rubytest_in_quickfix = 1
