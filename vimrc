@@ -62,7 +62,7 @@ let NERDSpaceDelims=1
 nmap <C-Up> [e
 nmap <C-Down> ]e
 vmap <C-Up> [egv
-vmap <D-Down> ]egv
+vmap <C-Down> ]egv
 
 if has("autocmd")
   filetype plugin indent on  " enable filetype detection
