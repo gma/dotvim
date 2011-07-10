@@ -18,7 +18,7 @@ set number                  " show line numbers
 set laststatus=2            " always show status bar
 set ruler                   " display the ruler at the bottom of the window
 set wildmenu                " nice tab completion just above the status bar
-set wildmode=list:longest   " tab completes common prefix, but lists choices
+set wildmode=list:full      " tab completes common prefix, but lists choices
 
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
