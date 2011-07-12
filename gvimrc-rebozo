@@ -1,0 +1,5 @@
+set guifont=Inconsolata:h14
+
+function! TallWindow()
+  set lines=71
+endfunction
