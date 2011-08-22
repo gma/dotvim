@@ -118,3 +118,8 @@ command! OpenChangedFiles :call OpenChangedFiles()
 " Plugin configuration
 let g:LustyJugglerSuppressRubyWarning = 1
 " let g:rubytest_in_quickfix = 1
+
+let hostfile = $HOME . '/.vim/vimrc-' . substitute(hostname(), "\\..*", "", "")
+if filereadable(hostfile)
+  exe 'source ' . hostfile
+endif
