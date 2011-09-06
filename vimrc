@@ -88,6 +88,7 @@ nmap <LEADER>e :s/should/should_eventually/<CR>
 " Web
 if has("autocmd")
   autocmd FileType haml set nowrap
+  autocmd FileType sass set textwidth=0
   autocmd BufWritePost *.coffee silent CoffeeMake! | cwindow | redraw!
 endif
  
