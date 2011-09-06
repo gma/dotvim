@@ -88,6 +88,7 @@ nmap <LEADER>e :s/should/should_eventually/<CR>
 " Web
 if has("autocmd")
   autocmd FileType haml set nowrap
+  autocmd BufWritePost *.coffee silent CoffeeMake! | cwindow | redraw!
 endif
  
 " Useful for running vi within irb
