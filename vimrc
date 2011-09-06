@@ -14,7 +14,6 @@ set nowrap                  " disable line wrapping
 set incsearch               " incremental search
 
 set hidden                  " open multiple files in one 'window'
-set number                  " show line numbers
 set laststatus=2            " always show status bar
 set ruler                   " display the ruler at the bottom of the window
 set wildmenu                " nice tab completion just above the status bar
