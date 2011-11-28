@@ -89,7 +89,7 @@ nmap <LEADER>e :s/should/should_eventually/<CR>
 if has("autocmd")
   autocmd FileType haml set nowrap
   autocmd FileType sass set textwidth=0
-  autocmd BufWritePost *.coffee silent CoffeeMake! | cwindow | redraw!
+  " autocmd BufWritePost *.coffee silent CoffeeMake! | cwindow | redraw!
 endif
  
 " Useful for running vi within irb
