@@ -12,7 +12,7 @@ set number                  " line numbers
 
 " colorscheme mac_classic
 colorscheme solarized
-set background=light
+set background=dark
 
 set colorcolumn=81
 
