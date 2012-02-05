@@ -22,6 +22,7 @@ set wildmode=list:full      " tab completes common prefix, but lists choices
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
 
+let g:solarized_termtrans=1
 colorscheme solarized
 set background=dark
 
