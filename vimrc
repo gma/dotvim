@@ -55,6 +55,7 @@ nmap <leader>v :tabedit $MYVIMRC<CR>
 set listchars=tab:>-,trail:·,eol:$
 nmap <silent> <leader>s :set nolist!<CR>
 
+nmap <LEADER>y :YRShow<CR>
 nmap <LEADER>d :NERDTreeToggle<CR>
 let NERDTreeDirArrows=1
 let NERDSpaceDelims=1
