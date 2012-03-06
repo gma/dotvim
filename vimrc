@@ -25,6 +25,7 @@ set noswapfile
 set tags+=gems.tags
 
 let g:solarized_termtrans=1
+set colorcolumn=81
 colorscheme solarized
 set background=dark
 
