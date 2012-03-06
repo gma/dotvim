@@ -45,11 +45,6 @@ nnoremap <C-l> <C-w>l
 ""
 " From http://vimcasts.org/episodes/updating-your-vimrc-file-on-the-fly/
 
-" Automatically source the config file on save.
-if has("autocmd")
-  autocmd BufWritePost .vimrc source $MYVIMRC
-endif
-
 " Quickly open the vim config file in a new tab.
 let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
