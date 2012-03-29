@@ -83,7 +83,7 @@ endif
 
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>
-nmap <LEADER>e :s/should/should_eventually/<CR>
+nmap <LEADER>e :s/it/it_eventually/<CR>
 
 " Web
 if has("autocmd")
