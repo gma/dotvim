@@ -41,10 +41,12 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
+" Setup shorthand mappings
+cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
+
 """ Make it easy to modify vim settings on the fly.
 ""
 " From http://vimcasts.org/episodes/updating-your-vimrc-file-on-the-fly/
-
 " Quickly open the vim config file in a new tab.
 let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
