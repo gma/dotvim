@@ -31,6 +31,8 @@ set colorcolumn=81
 colorscheme solarized
 set background=dark
 
+set cursorline
+
 " colorscheme desert
 " colorscheme ir_black
 " colorscheme railscasts
