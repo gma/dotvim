@@ -12,6 +12,8 @@ set autoindent
 set nowrap                  " disable line wrapping
 " set hlsearch                " highlight search matches
 set incsearch               " incremental search
+set ignorecase              " case insensitive search...
+set smartcase               " ...unless you use a capital in your search
 
 set hidden                  " open multiple files in one 'window'
 set laststatus=2            " always show status bar
