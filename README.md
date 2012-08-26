@@ -1,11 +1,10 @@
 My Vim Config
 =============
 
-I copy this repository to every computer I work on. After I've run the
-`install` script I've got a fully capable  editor (both the GUI version
--- gvim or MacVim) and a console version.
+I install this repository to every computer I work on:
 
-It makes for an easy life.
+    $ git clone github@github.com:gma/dotvim.git ~/.vim
+    $ git submodule update --init
 
 Feel free to have a poke around, but I recommend building up your own
 Vim config by hand from all the blog posts and examples you can find on
