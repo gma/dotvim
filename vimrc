@@ -92,6 +92,7 @@ endif
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>
 nmap <LEADER>e :s/it/it_eventually/<CR>
+au BufRead,BufNewFile *.rabl setf ruby
 
 " Web
 if has("autocmd")
