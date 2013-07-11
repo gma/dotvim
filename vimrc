@@ -1,6 +1,6 @@
 set nocompatible
 
-silent! call pathogen#runtime_append_all_bundles()
+silent! call pathogen#infect()
 
 set tabstop=2               " default size of a real tab stop
 set softtabstop=2           " pressing tab/backspaces inserts/removes 2 chars
