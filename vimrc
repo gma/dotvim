@@ -134,3 +134,11 @@ let hostfile = $HOME . '/.vim/vimrc-' . substitute(hostname(), "\\..*", "", "")
 if filereadable(hostfile)
   exe 'source ' . hostfile
 endif
+
+" Vimux
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vi :VimuxInspectRunner<CR>
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vs :VimuxInterruptRunner<CR>
+map <Leader>vc :VimuxClearRunnerHistory<CR>
