@@ -1,4 +1,5 @@
 set nocompatible
+runtime macros/matchit.vim
 
 silent! call pathogen#infect()
 
