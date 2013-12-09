@@ -130,11 +130,7 @@ command! OpenChangedFiles :call OpenChangedFiles()
 
 " Plugin configuration
 let g:CommandTMatchWindowAtTop=1
-
-let hostfile = $HOME . '/.vim/vimrc-' . substitute(hostname(), "\\..*", "", "")
-if filereadable(hostfile)
-  exe 'source ' . hostfile
-endif
+let g:ruby_indent_private_protected_style = 'indent'
 
 " Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
@@ -143,3 +139,9 @@ map <Leader>vi :VimuxInspectRunner<CR>
 map <Leader>vq :VimuxCloseRunner<CR>
 map <Leader>vs :VimuxInterruptRunner<CR>
 map <Leader>vc :VimuxClearRunnerHistory<CR>
+
+" Host specific config
+let hostfile = $HOME . '/.vim/vimrc-' . substitute(hostname(), "\\..*", "", "")
+if filereadable(hostfile)
+  exe 'source ' . hostfile
+endif
