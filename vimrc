@@ -129,7 +129,8 @@ endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
 
 " Plugin configuration
-let g:CommandTMatchWindowAtTop=1
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 let g:ruby_indent_private_protected_style = 'indent'
 
 " Vimux
