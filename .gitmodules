@@ -70,3 +70,6 @@
 [submodule "bundle/funcoo.vim"]
 	path = bundle/funcoo.vim
 	url = https://github.com/rizzatti/funcoo.vim.git
+[submodule "bundle/vim-go.git"]
+	path = bundle/vim-go.git
+	url = https://github.com/fatih/vim-go.git
