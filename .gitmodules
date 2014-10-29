@@ -73,3 +73,6 @@
 [submodule "bundle/vim-go.git"]
 	path = bundle/vim-go.git
 	url = https://github.com/fatih/vim-go.git
+[submodule "bundle/mustache"]
+	path = bundle/mustache
+	url = https://github.com/mustache/vim-mustache-handlebars.git
