@@ -116,7 +116,7 @@ if &t_Co > 2 || has("gui_running")
   syntax on
 endif
 
-" Functions
+" Functions and commands
 function! OpenChangedFiles()
   only " Close all windows, unless they're modified
   let status = system('git status -s | grep "^ \?\(M\|A\)" | cut -d " " -f 3')
@@ -127,6 +127,11 @@ function! OpenChangedFiles()
   endfor
 endfunction
 command! OpenChangedFiles :call OpenChangedFiles()
+
+command! TagFiles :call EchoTags()
+function! EchoTags()
+  echo join(split(&tags, ","), "\n")
+endfunction
 
 " Plugin configuration
 let g:ctrlp_map = '<Leader>t'
