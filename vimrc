@@ -77,6 +77,15 @@ if has("autocmd")
   filetype plugin indent on  " enable filetype detection
 endif
 
+filetype plugin on
+
+" Editing mail
+if has("autocmd")
+  autocmd FileType mail setlocal wrap
+  autocmd FileType mail setlocal linebreak    " wrap on word boundaries
+  autocmd FileType mail setlocal textwidth=0  " turns off hard wrapping
+endif
+
 " Indentation
 if has("autocmd")
   autocmd FileType sh setlocal shiftwidth=4
