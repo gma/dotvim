@@ -94,3 +94,6 @@
 [submodule "bundle/vimux-cucumber"]
 	path = bundle/vimux-cucumber
 	url = https://github.com/cloud8421/vimux-cucumber.git
+[submodule "bundle/vimux-ruby-test"]
+	path = bundle/vimux-ruby-test
+	url = https://github.com/pgr0ss/vimux-ruby-test.git
