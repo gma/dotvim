@@ -97,3 +97,6 @@
 [submodule "bundle/vimux-ruby-test"]
 	path = bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test.git
+[submodule "bundle/vim-mustache-handlebars"]
+	path = bundle/vim-mustache-handlebars
+	url = https://github.com/mustache/vim-mustache-handlebars.git
