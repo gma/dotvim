@@ -104,6 +104,7 @@ nmap <LEADER>E :s/_eventually//<CR>
 nmap <LEADER>e :s/it/it_eventually/<CR>
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.jbuilder setf ruby
+set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
 
 " Web
 if has("autocmd")
