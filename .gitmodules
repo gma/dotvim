@@ -106,3 +106,6 @@
 [submodule "bundle/vim-ruby-minitest"]
 	path = bundle/vim-ruby-minitest
 	url = https://github.com/sunaku/vim-ruby-minitest.git
+[submodule "bundle/vim-terraform"]
+	path = bundle/vim-terraform
+	url = https://github.com/hashivim/vim-terraform.git
