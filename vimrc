@@ -62,7 +62,7 @@ let mapleader = ","
 nmap <leader>v :tabedit $MYVIMRC<CR>
 
 " Show whitespace
-set listchars=tab:>-,trail:·,eol:$
+set listchars=tab:>-,trail:·,eol:$,extends:#,nbsp:·
 nmap <silent> <leader>s :set nolist!<CR>
 
 nmap <LEADER>y :YRShow<CR>
