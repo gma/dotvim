@@ -6,6 +6,7 @@ silent! call pathogen#infect()
 set tabstop=2               " default size of a real tab stop
 set softtabstop=2           " pressing tab/backspaces inserts/removes 2 chars
 set shiftwidth=2            " the number of spaces used by << and >>
+set shiftround              " round spaces indented by <, > to multiple of width
 set expandtab               " insert spaces instead of tabs
 set textwidth=72            " right margin to use when wrapping text
 
