@@ -101,6 +101,7 @@ if has("autocmd")
   autocmd FileType markdown set wrap
   autocmd FileType markdown set linebreak
 endif
+let g:markdown_enable_spell_checking = 0
 
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>
