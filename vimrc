@@ -109,6 +109,11 @@ au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
 
+" Sysadmin
+if has("autocmd")
+  autocmd FileType tf set nowrap   " Terraform
+endif
+
 " Web
 if has("autocmd")
   autocmd FileType haml set nowrap
