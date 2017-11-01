@@ -27,6 +27,7 @@ set wildmode=list:full      " tab completes common prefix, but lists choices
 
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
+set nobackup                " don't create file called foo~ when editing foo
 
 set wildignore=tmp/cache/**
 
