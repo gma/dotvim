@@ -103,3 +103,6 @@
 [submodule "bundle/vim-terraform"]
 	path = bundle/vim-terraform
 	url = https://github.com/hashivim/vim-terraform.git
+[submodule "bundle/vimux-ruby-test"]
+	path = bundle/vimux-ruby-test
+	url = https://github.com/pgr0ss/vimux-ruby-test.git

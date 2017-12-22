@@ -107,6 +107,8 @@ let g:markdown_enable_spell_checking = 0
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>
 nmap <LEADER>e :s/it/it_eventually/<CR>
+nmap <LEADER>bd F{%clend<ESC>bXi<CR><ESC>``cldo<ESC>f<bar>;a<CR><ESC>var=
+nmap <LEADER>b{ ?do <BAR><CR>%ce}<ESC>``ce{<ESC>JJ$
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
