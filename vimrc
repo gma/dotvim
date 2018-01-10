@@ -114,6 +114,9 @@ au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
 
+let g:vimux_ruby_clear_console_on_run = 0
+nmap <LEADER>T :RunRubyFocusedTest<CR>
+
 " Sysadmin
 if has("autocmd")
   autocmd FileType tf set nowrap   " Terraform
