@@ -110,6 +110,7 @@ nmap <LEADER>e :s/it/it_eventually/<CR>
 nmap <LEADER>bd F{%clend<ESC>bXi<CR><ESC>``cldo<ESC>f<bar>;a<CR><ESC>var=
 nmap <LEADER>b{ ?do <BAR><CR>%ce}<ESC>``ce{<ESC>JJ$
 nmap <LEADER>dst [[f(ldi)]mOattr_accessor <ESC>po<CR>def initialize()<CR><ESC>pjo<ESC>[mjk$P:s,:,,g<ESC>j?< Struct<ESC>hD]mj:s/, /\r/eg<CR>vir:s,:\([a-z0-9_]\+\),@\1 = \1,<CR>vir=
+nmap <LEADER>hh /=><ESC>F:xepldf>
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
