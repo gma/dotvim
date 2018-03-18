@@ -106,3 +106,6 @@
 [submodule "bundle/vimux-ruby-test"]
 	path = bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test.git
+[submodule "bundle/jellybeans.vim"]
+	path = bundle/jellybeans.vim
+	url = https://github.com/nanotech/jellybeans.vim
