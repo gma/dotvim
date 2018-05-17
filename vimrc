@@ -118,6 +118,10 @@ set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
 let g:vimux_ruby_clear_console_on_run = 0
 nmap <LEADER>T :RunRubyFocusedTest<CR>
 
+" Parse Rails deprecation warnings from logs
+" (load them into quickfix window with `vi -q log`)
+set errorformat+=DEPRECATION\ WARNING:\ %m\ \(called\ %.%\\+\ %f:%l\)
+
 " Sysadmin
 if has("autocmd")
   autocmd FileType tf set nowrap   " Terraform
