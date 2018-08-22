@@ -29,6 +29,9 @@ set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
 set nobackup                " don't create file called foo~ when editing foo
 
+set splitbelow              " open new split below, and
+set splitright              " to the right of the current pane
+
 set wildignore=tmp/cache/**
 
 set tags+=gems.tags
