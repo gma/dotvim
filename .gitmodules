@@ -121,3 +121,6 @@
 [submodule "bundle/indentpython.vim"]
 	path = bundle/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim
+[submodule "bundle/vim-jinja"]
+	path = bundle/vim-jinja
+	url = https://github.com/lepture/vim-jinja.git
