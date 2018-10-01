@@ -108,6 +108,9 @@ if has("autocmd")
 endif
 let g:markdown_enable_spell_checking = 0
 
+" Python
+let g:jedi#popup_on_dot = 0
+
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>
 nmap <LEADER>e :s/it/it_eventually/<CR>
