@@ -97,7 +97,6 @@ endif
 if has("autocmd")
   autocmd FileType sh setlocal shiftwidth=4
   autocmd FileType css setlocal shiftwidth=4
-  autocmd FileType python setlocal shiftwidth=4
   autocmd FileType elm setlocal shiftwidth=4
 endif
 
@@ -109,6 +108,13 @@ endif
 let g:markdown_enable_spell_checking = 0
 
 " Python
+if has("autocmd")
+  autocmd FileType python setlocal shiftwidth=4
+  autocmd FileType python setlocal softtabstop=4
+  autocmd FileType python setlocal tabstop=4
+  autocmd FileType python setlocal textwidth=0
+  autocmd FileType python setlocal wrapmargin=0
+endif
 let g:jedi#popup_on_dot = 0
 
 " Ruby
