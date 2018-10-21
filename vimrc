@@ -116,6 +116,7 @@ if has("autocmd")
   autocmd FileType python setlocal wrapmargin=0
 endif
 let g:jedi#popup_on_dot = 0
+let g:jedi#smart_auto_mappings = 0
 
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>
