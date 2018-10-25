@@ -127,3 +127,6 @@
 [submodule "bundle/jedi-vim"]
 	path = bundle/jedi-vim
 	url = https://github.com/davidhalter/jedi-vim.git
+[submodule "bundle/vim-behave"]
+	path = bundle/vim-behave
+	url = https://github.com/rooprob/vim-behave.git
