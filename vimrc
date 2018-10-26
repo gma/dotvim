@@ -100,6 +100,12 @@ if has("autocmd")
   autocmd FileType elm setlocal shiftwidth=4
 endif
 
+" Make files
+if has("autocmd")
+  autocmd FileType make set tabstop=8
+  autocmd FileType make setlocal shiftwidth=8
+endif
+
 " Markdown
 if has("autocmd")
   autocmd FileType markdown set wrap
