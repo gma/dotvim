@@ -130,3 +130,6 @@
 [submodule "bundle/vim-behave"]
 	path = bundle/vim-behave
 	url = https://github.com/rooprob/vim-behave.git
+[submodule "bundle/goyo"]
+	path = bundle/goyo
+	url = https://github.com/junegunn/goyo.vim
