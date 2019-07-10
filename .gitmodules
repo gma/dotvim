@@ -133,6 +133,3 @@
 [submodule "bundle/behave.vim"]
 	path = bundle/behave.vim
 	url = https://github.com/avanzzzi/behave.vim.git
-[submodule "bundle/vim-tmux-navigator"]
-	path = bundle/vim-tmux-navigator
-	url = https://github.com/christoomey/vim-tmux-navigator.git
