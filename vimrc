@@ -100,6 +100,12 @@ if has("autocmd")
   autocmd FileType elm setlocal shiftwidth=4
 endif
 
+" Git
+if has("autocmd")
+  " don't jump to last position within .git/COMMIT_EDITMSG files
+  autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+endif
+
 " Make files
 if has("autocmd")
   autocmd FileType make set tabstop=8
