@@ -204,6 +204,11 @@ map <Leader>vq :VimuxCloseRunner<CR>
 map <Leader>vs :VimuxInterruptRunner<CR>
 map <Leader>vc :VimuxClearRunnerHistory<CR>
 
+" Automation
+if has("autocmd")
+  autocmd BufWritePost */suckless/*/config.h !make && sudo make install
+endif
+
 " Host specific config
 let hostfile = $HOME . '/.vim/vimrc-' . substitute(hostname(), "\\..*", "", "")
 if filereadable(hostfile)
