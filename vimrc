@@ -90,7 +90,11 @@ filetype plugin on
 if has("autocmd")
   autocmd FileType mail setlocal wrap
   autocmd FileType mail setlocal linebreak    " wrap on word boundaries
-  autocmd FileType mail setlocal textwidth=0  " turns off hard wrapping
+  autocmd FileType mail setlocal textwidth=72
+  autocmd FileType mail setlocal formatoptions=watqc
+  autocmd FileType mail setlocal nojs
+  autocmd FileType mail setlocal nosmartindent
+  autocmd FileType mail match ErrorMsg '\s\+$'
 endif
 
 " Indentation
