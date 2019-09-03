@@ -94,7 +94,7 @@ if has("autocmd")
   autocmd FileType mail setlocal formatoptions=watqc
   autocmd FileType mail setlocal nojs
   autocmd FileType mail setlocal nosmartindent
-  autocmd FileType mail match ErrorMsg '\s\+$'
+  autocmd FileType mail match Visual '\s\+$'
 endif
 
 " Indentation
