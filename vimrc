@@ -130,9 +130,13 @@ if has("autocmd")
   autocmd FileType python setlocal tabstop=4
   autocmd FileType python setlocal textwidth=0
   autocmd FileType python setlocal wrapmargin=0
+  autocmd BufWritePre */co-op/*/*.py execute ':Black'
 endif
+nnoremap <F9> :Black<CR>
+let g:black_linelength = 80
 let g:jedi#popup_on_dot = 0
 let g:jedi#smart_auto_mappings = 0
+
 
 " Ruby
 nmap <LEADER>E :s/_eventually//<CR>

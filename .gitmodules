@@ -136,3 +136,6 @@
 [submodule "bundle/vim-vue"]
 	path = bundle/vim-vue
 	url = https://github.com/posva/vim-vue.git
+[submodule "bundle/black"]
+	path = bundle/black
+	url = https://github.com/psf/black.git
