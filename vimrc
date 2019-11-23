@@ -130,7 +130,7 @@ if has("autocmd")
   autocmd FileType python setlocal tabstop=4
   autocmd FileType python setlocal textwidth=0
   autocmd FileType python setlocal wrapmargin=0
-  autocmd BufWritePre */co-op/*/*.py execute ':Black'
+  autocmd BufWritePre */fnc-*/*/*.py execute ':Black'
 endif
 nnoremap <F9> :Black<CR>
 let g:black_linelength = 80
