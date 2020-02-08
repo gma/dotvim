@@ -139,3 +139,6 @@
 [submodule "bundle/black"]
 	path = bundle/black
 	url = https://github.com/psf/black.git
+[submodule "bundle/vim-ripgrep"]
+	path = bundle/vim-ripgrep
+	url = https://github.com/jremmen/vim-ripgrep.git
