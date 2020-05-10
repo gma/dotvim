@@ -121,6 +121,9 @@ if has("autocmd")
 endif
 let g:markdown_enable_spell_checking = 0
 
+nnoremap <leader>1 yypVr=
+nnoremap <leader>2 yypVr-
+
 " Python
 if has("autocmd")
   autocmd FileType python setlocal shiftwidth=4
