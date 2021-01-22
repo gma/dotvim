@@ -142,6 +142,9 @@ let g:jedi#smart_auto_mappings = 0
 
 
 " Ruby
+if has("autocmd")
+  autocmd FileType ruby setlocal wrapmargin=0
+end
 nmap <LEADER>E :s/_eventually//<CR>
 nmap <LEADER>e :s/it/it_eventually/<CR>
 nmap <LEADER>bd F{%clend<ESC>bXi<CR><ESC>``cldo<ESC>f<bar>;a<CR><ESC>var=
