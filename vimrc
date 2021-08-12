@@ -209,6 +209,7 @@ let g:ctrlp_map = '<Leader>t'
 let g:ctrlp_user_command = ['.git', 'cd %s && git ls-files']
 let g:ctrlp_working_path_mode = 'a'
 let g:ruby_indent_private_protected_style = 'indent'
+let g:yankring_history_dir = '~/.vim'
 
 " Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
