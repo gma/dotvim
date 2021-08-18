@@ -34,7 +34,6 @@ set splitright              " to the right of the current pane
 
 set wildignore=tmp/cache/**
 
-set tags+=gems.tags
 
 let g:solarized_termtrans=1
 set colorcolumn=81
@@ -154,6 +153,7 @@ nmap <LEADER>hh /=><ESC>F:xepldf>
 au BufRead,BufNewFile *.rabl setf ruby
 au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
+set tags+=gems.tags
 
 let g:vimux_ruby_clear_console_on_run = 0
 nmap <LEADER>T :RunRubyFocusedTest<CR>
