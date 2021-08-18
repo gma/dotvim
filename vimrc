@@ -32,6 +32,8 @@ set nobackup                " don't create file called foo~ when editing foo
 set splitbelow              " open new split below, and
 set splitright              " to the right of the current pane
 
+set dictionary+=/usr/share/dict/words  " useful for <C-x> <C-k> completion
+
 set wildignore=tmp/cache/**
 
 
