@@ -142,3 +142,6 @@
 [submodule "bundle/vim-ripgrep"]
 	path = bundle/vim-ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
+[submodule "bundle/palenight.vim"]
+	path = bundle/palenight.vim
+	url = https://github.com/drewtempelmeyer/palenight.vim

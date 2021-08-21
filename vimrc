@@ -39,15 +39,16 @@ set wildignore=tmp/cache/**
 
 let g:solarized_termtrans=1
 set colorcolumn=81
-colorscheme jellybeans
 set background=dark
 
 set cursorline
 
+" colorscheme jellybeans
 " colorscheme desert
 " colorscheme ir_black
 " colorscheme railscasts
 " colorscheme mac_classic
+colorscheme palenight
 " colorscheme topfunky-light
 
 " Switch windows with Ctrl + a movement key
