@@ -60,12 +60,14 @@ nnoremap <C-l> <C-w>l
 " Setup shorthand mappings
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+let mapleader = ","
+
 """ Make it easy to modify vim settings on the fly.
 ""
 " From http://vimcasts.org/episodes/updating-your-vimrc-file-on-the-fly/
 " Quickly open the vim config file in a new tab.
-let mapleader = ","
-nmap <leader>v :tabedit $MYVIMRC<CR>
+nnoremap <leader>ev :split $MYVIMRC<cr>
+nnoremap <leader>sv :source $MYVIMRC<cr>
 
 " Show whitespace
 set listchars=tab:>-,trail:·,eol:$,extends:#,nbsp:·
