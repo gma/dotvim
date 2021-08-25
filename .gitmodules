@@ -121,3 +121,6 @@
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
+[submodule "bundle/base16-vim.git"]
+	path = bundle/base16-vim.git
+	url = https://github.com/chriskempson/base16-vim.git
