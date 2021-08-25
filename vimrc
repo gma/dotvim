@@ -43,14 +43,6 @@ set background=dark
 
 set cursorline
 
-" colorscheme jellybeans
-" colorscheme desert
-" colorscheme ir_black
-" colorscheme railscasts
-" colorscheme mac_classic
-colorscheme palenight
-" colorscheme topfunky-light
-
 " Switch windows with Ctrl + a movement key
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j

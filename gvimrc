@@ -10,11 +10,8 @@ set guifont=Inconsolata:h15
 set lines=40 columns=85     " window dimensions
 set number                  " line numbers
 
-colorscheme grb256
-" colorscheme mac_classic
 " colorscheme solarized
 " set background=dark
-
 set colorcolumn=81
 
 " Glenn's config which opens two splits when you're editing a project
