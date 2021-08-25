@@ -34,9 +34,6 @@
 [submodule "bundle/nerdcommenter"]
 	path = bundle/nerdcommenter
 	url = https://github.com/scrooloose/nerdcommenter.git
-[submodule "bundle/vim-colors-solarized"]
-	path = bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
 [submodule "bundle/vim-unimpaired"]
 	path = bundle/vim-unimpaired
 	url = https://github.com/tpope/vim-unimpaired
@@ -91,9 +88,6 @@
 [submodule "bundle/vimux-ruby-test"]
 	path = bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test.git
-[submodule "bundle/jellybeans.vim"]
-	path = bundle/jellybeans.vim
-	url = https://github.com/nanotech/jellybeans.vim
 [submodule "bundle/elm-vim"]
 	path = bundle/elm-vim
 	url = https://github.com/ElmCast/elm-vim.git
@@ -124,9 +118,6 @@
 [submodule "bundle/vim-ripgrep"]
 	path = bundle/vim-ripgrep
 	url = https://github.com/jremmen/vim-ripgrep.git
-[submodule "bundle/palenight.vim"]
-	path = bundle/palenight.vim
-	url = https://github.com/drewtempelmeyer/palenight.vim
 [submodule "bundle/ansible-vim"]
 	path = bundle/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim

@@ -36,11 +36,7 @@ set dictionary+=/usr/share/dict/words  " useful for <C-x> <C-k> completion
 
 set wildignore=tmp/cache/**
 
-
-let g:solarized_termtrans=1
 set colorcolumn=81
-set background=dark
-
 set cursorline
 
 " Switch windows with Ctrl + a movement key
