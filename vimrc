@@ -39,6 +39,10 @@ set wildignore=tmp/cache/**
 set colorcolumn=81
 set cursorline
 
+let base16colorspace=256
+colorscheme base16-circus
+let g:airline_theme = 'base16_circus'
+
 " Switch windows with Ctrl + a movement key
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
