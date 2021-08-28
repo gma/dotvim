@@ -1,7 +1,7 @@
 set nocompatible
 runtime macros/matchit.vim
 
-silent! call pathogen#infect()
+execute pathogen#infect()
 
 set tabstop=2               " default size of a real tab stop
 set softtabstop=2           " pressing tab/backspaces inserts/removes 2 chars
