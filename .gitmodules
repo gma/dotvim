@@ -127,9 +127,6 @@
 [submodule "bundle/goyo"]
 	path = bundle/goyo
 	url = https://github.com/junegunn/goyo.vim
-[submodule "bundle/behave.vim"]
-	path = bundle/behave.vim
-	url = https://github.com/avanzzzi/behave.vim.git
 [submodule "bundle/vim-vue"]
 	path = bundle/vim-vue
 	url = https://github.com/posva/vim-vue.git
