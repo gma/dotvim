@@ -76,12 +76,6 @@
 [submodule "bundle/vimux"]
 	path = bundle/vimux
 	url = https://github.com/benmills/vimux.git
-[submodule "bundle/vim-cucumber"]
-	path = bundle/vim-cucumber
-	url = https://github.com/tpope/vim-cucumber.git
-[submodule "bundle/vimux-cucumber"]
-	path = bundle/vimux-cucumber
-	url = https://github.com/cloud8421/vimux-cucumber.git
 [submodule "bundle/vim-mustache-handlebars"]
 	path = bundle/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars.git
