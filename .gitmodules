@@ -82,9 +82,6 @@
 [submodule "bundle/vimux-ruby-test"]
 	path = bundle/vimux-ruby-test
 	url = https://github.com/pgr0ss/vimux-ruby-test.git
-[submodule "bundle/elm-vim"]
-	path = bundle/elm-vim
-	url = https://github.com/ElmCast/elm-vim.git
 [submodule "bundle/vim-airline"]
 	path = bundle/vim-airline
 	url = https://github.com/vim-airline/vim-airline
