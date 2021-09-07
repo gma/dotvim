@@ -50,7 +50,7 @@ nnoremap <C-j> <C-w>j
 nnoremap <C-k> <C-w>k
 nnoremap <C-l> <C-w>l
 
-" Setup shorthand mappings
+" Use %% for current filename in : commands
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Replace silversearcher with Ripgrep
