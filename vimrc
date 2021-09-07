@@ -32,7 +32,7 @@ set splitright              " to the right of the current pane
 
 set dictionary+=/usr/share/dict/words  " useful for <C-x> <C-k> completion
 
-set path+=**                " enable :find to search beneath cwd
+set path=.,,**              " enable :find to search beneath cwd
 set wildmenu                " nice tab completion just above the status bar
 set wildmode=list:full      " tab completes common prefix, but lists choices
 set wildignore=tmp/cache/**
