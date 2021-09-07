@@ -67,8 +67,7 @@ set listchars=tab:>-,trail:·,eol:$,extends:#,nbsp:·
 nmap <silent> <leader>s :set nolist!<CR>
 
 nmap <LEADER>y :YRShow<CR>
-nmap <LEADER>d :NERDTreeToggle<CR>
-let NERDTreeDirArrows=1
+
 let NERDSpaceDelims=1
 
 " Text bubbling (http://vimcasts.org/episodes/bubbling-text/)
