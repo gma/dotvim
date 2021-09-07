@@ -53,6 +53,9 @@ nnoremap <C-l> <C-w>l
 " Setup shorthand mappings
 cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
+" Replace silversearcher with Ripgrep
+cnoreabbrev Ag Rg
+
 let mapleader = ","
 
 """ Make it easy to modify vim settings on the fly.
