@@ -22,8 +22,6 @@ set smartcase               " ...unless you use a capital in your search
 set hidden                  " open multiple files in one 'window'
 set laststatus=2            " always show status bar
 set ruler                   " display the ruler at the bottom of the window
-set wildmenu                " nice tab completion just above the status bar
-set wildmode=list:full      " tab completes common prefix, but lists choices
 
 set history=1000            " remember more than 20 commands/search patterns
 set noswapfile
@@ -34,6 +32,9 @@ set splitright              " to the right of the current pane
 
 set dictionary+=/usr/share/dict/words  " useful for <C-x> <C-k> completion
 
+set path+=**                " enable :find to search beneath cwd
+set wildmenu                " nice tab completion just above the status bar
+set wildmode=list:full      " tab completes common prefix, but lists choices
 set wildignore=tmp/cache/**
 
 set colorcolumn=81
