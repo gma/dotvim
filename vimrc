@@ -200,6 +200,11 @@ let g:ctrlp_working_path_mode = 'a'
 let g:ruby_indent_private_protected_style = 'indent'
 let g:yankring_history_dir = '~/.vim'
 
+" Fugitive
+nmap <leader>gs :G<CR>
+nmap <leader>gf :diffget //2<CR>
+nmap <leader>gj :diffget //2<CR>
+
 " Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
 map <Leader>vt :VimuxPromptCommand("ruby -Itest " . bufname("%"))<CR>
