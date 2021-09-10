@@ -30,10 +30,18 @@ plugin because:
 
 - I know I've got the same versions of the submodules on all of my computers.
 
-So to add a new plugin I:
+I've written the `add-plugin` script to help me remember exactly what to do
+when adding a new plugin.
 
-- Use `git submodule add` to clone it into a subdirectory of `pack/minpac`
-- Add a call to `minpac#add()` in `packages.vim`
+When considering whether to make a plugin optional (`add-plugin -o`) it's worth
+noting that filetype plugins (e.g. those with an `ftdetect` directory) should
+be installed in `pack/minpac/start`.
+
+This is because they generally don't do much until you open a file of the
+relevant type, and are effectively [loaded on demand] anyway. The small amount
+of code that they do load is useful for filetype detection.
+
+[loaded on demand]: https://vi.stackexchange.com/a/20818/37882
 
 To remove a plugin
 ------------------
@@ -43,18 +51,19 @@ You need to [delete the submodule][delete], then remove the corresponding
 
 [delete]: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
 
-To use a different fork of a bundle
------------------------------------
+To switch to a fork of a plugin
+-------------------------------
 
-If you want to switch to somebody else's implementation of a bundle, we
-can just point the submodule at a different repo:
+If you want to switch to somebody else's implementation of a plugin, we
+can update the minpac config in `packages.vim`, then point the submodule at a
+different repo:
 
     $ git config --file=.gitmodules submodule.<module-path>.url <repo-url>
     $ git submodule sync
 
 What I've read online suggests the above should be enough, but when
-switching from tpope/vim-markdown to gabrielelana/vim-markdown I found I also
-needed to do:
+switching from `tpope/vim-markdown` to `gabrielelana/vim-markdown` I found I
+also needed to do:
 
     $ cd path/to/vim-markdown
     $ git fetch origin

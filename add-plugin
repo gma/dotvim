@@ -1,0 +1,86 @@
+#!/bin/bash
+
+## Functions
+
+usage()
+{
+    cat <<EOF 1>&2
+Usage: $(basename $0) [OPTIONS] <url>
+
+OPTIONS
+        -o    Plugin is optional (use :packadd to load)
+
+EOF
+    exit 1
+}
+
+
+repo_path()
+{
+    local url=$1
+    local owner=$(basename $(dirname $url))
+    echo "$owner/$(repo_name $url)"
+}
+
+
+repo_name()
+{
+    local url=$1
+    basename $url .git
+}
+
+
+toggling_optional_status()
+{
+    test -d "$PACKAGE/$ALTERNATE_PARENT/$(repo_name $URL)"
+}
+
+
+vim_script()
+{
+    local template="  call minpac#add('%s'%s)"
+    if [ "$PARENT" = "opt" ]; then
+        printf "$template" $(repo_path $URL) ", {'type': 'opt'}"
+    else
+        printf "$template" $(repo_path $URL)
+    fi
+}
+
+
+## Main program
+
+[ -n "$DEBUG" ] && set -x
+
+set -euo pipefail
+
+PACKAGE=pack/minpac
+PARENT=start
+ALTERNATE_PARENT=opt
+
+while getopts ":o" OPT; do
+    case "$OPT" in
+        o)
+            PARENT=opt
+            ALTERNATE_PARENT=start
+            shift
+            ;;
+    esac
+done
+
+[ -z "${1+x}" ] && usage
+URL="$1"
+shift
+
+git submodule add $URL $PACKAGE/$PARENT/$(repo_name $URL)
+if toggling_optional_status; then
+    git rm "$PACKAGE/$ALTERNATE_PARENT/$(repo_name $URL)"
+fi
+
+cat <<EOF
+
+Add this to packages.vim:
+
+$(vim_script)
+
+EOF
+
