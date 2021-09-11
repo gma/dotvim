@@ -50,8 +50,6 @@ function! PackInit() abort
   " Optional plugins, load them with `:packadd <name>`
 endfunction
 
-" Plugin settings
-
 " Define user commands for updating/cleaning the plugins.
 " Each of them calls PackInit() to load minpac and register
 " the information of plugins, then performs the task.
@@ -59,7 +57,23 @@ command! PackUpdate call PackInit() | call minpac#update()
 command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus packadd minpac | call minpac#status()
 
-" fzf.vim config
+" base16-theme and vim-airline-themes
+let base16colorspace=256
+let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
+execute('colorscheme ' . theme)
+let g:airline_theme = join(split(theme, '-'), '_')
+
+" ctrlp
+let g:ctrlp_map = '<Leader>t'
+let g:ctrlp_user_command = ['.git', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
+let g:ctrlp_working_path_mode = 'a'
+
+" fugitive
+nmap <leader>gs :G<CR>
+nmap <leader>gf :diffget //2<CR>
+nmap <leader>gj :diffget //2<CR>
+
+" fzf.vim
 nmap <leader>ff :Files<cr>
 nmap <leader>fg :GFiles<cr>
 nmap <leader>fl :Lines<cr>
@@ -68,3 +82,38 @@ nmap <leader>fc :Commits<cr>
 nmap <leader>fC :BCommits<cr>
 nmap <leader>ft :Tags<cr>
 nmap <leader>fm :Maps<cr>
+
+" markdown
+nnoremap <leader>1 yypVr=
+nnoremap <leader>2 yypVr-
+
+" nerdcommenter
+let NERDSpaceDelims=1
+
+" vim-ruby
+let g:ruby_indent_private_protected_style = 'indent'
+
+" vim-test
+let test#strategy = "vimux"
+let g:test#echo_command = 0
+let g:test#preserve_screen = 1
+
+let test#ruby#minitest#executable = 'docker compose exec web ruby -Itest'
+
+nmap <silent> <leader>Tn :TestNearest<CR>
+nmap <silent> <leader>Tf :TestFile<CR>
+nmap <silent> <leader>Ts :TestSuite<CR>
+nmap <silent> <leader>Tl :TestLast<CR>
+nmap <silent> <leader>Tv :TestVisit<CR>
+
+" vimux
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
+map <Leader>vi :VimuxInspectRunner<CR>
+map <Leader>vq :VimuxCloseRunner<CR>
+map <Leader>vs :VimuxInterruptRunner<CR>
+map <Leader>vc :VimuxClearRunnerHistory<CR>
+
+" YankRing
+nmap <leader>y :YRShow<CR>
+let g:yankring_history_dir = '~/.vim'

@@ -7,53 +7,10 @@ let mapleader = ","
 " Plugins
 packadd! matchit
 source ~/.vim/packages.vim
+source ~/.vim/options.vim
+source ~/.vim/mappings.vim
 
-" Options
-"
-set tabstop=2               " default size of a real tab stop
-set softtabstop=2           " pressing tab/backspaces inserts/removes 2 chars
-set shiftwidth=2            " the number of spaces used by << and >>
-set shiftround              " round spaces indented by <, > to multiple of width
-set expandtab               " insert spaces instead of tabs
-set copyindent              " if this line uses tabs, use them on next line
-set preserveindent          " don't replace existing tabs to spaces on re-indent
-set textwidth=72            " right margin to use when wrapping text
-
-set autoindent
-set nowrap                  " disable line wrapping
-" set hlsearch                " highlight search matches
-set incsearch               " incremental search
-set ignorecase              " case insensitive search...
-set smartcase               " ...unless you use a capital in your search
-
-set matchtime=2             " time to highlight matching parentheses (x 0.1s)
-
-set hidden                  " open multiple files in one 'window'
-set laststatus=2            " always show status bar
-set ruler                   " display the ruler at the bottom of the window
-
-set history=1000            " remember more than 20 commands/search patterns
-set noswapfile
-set nobackup                " don't create file called foo~ when editing foo
-
-set splitbelow              " open new split below, and
-set splitright              " to the right of the current pane
-
-set dictionary+=/usr/share/dict/words  " useful for <C-x> <C-k> completion
-
-set path=.,,**              " enable :find to search beneath cwd
-set wildmenu                " nice tab completion just above the status bar
-set wildmode=list:full      " tab completes common prefix, but lists choices
-set wildignore=tmp/cache/**
-
-set colorcolumn=81
-set cursorline
-
-let base16colorspace=256
-let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
-execute('colorscheme ' . theme)
-let g:airline_theme = join(split(theme, '-'), '_')
-
+" Disable netrw banner
 let g:netrw_banner = 0
 
 " Switch windows with Ctrl + a movement key
@@ -130,9 +87,6 @@ if has("autocmd")
 endif
 let g:markdown_enable_spell_checking = 0
 
-nnoremap <leader>1 yypVr=
-nnoremap <leader>2 yypVr-
-
 " Python
 if has("autocmd")
   autocmd FileType python setlocal shiftwidth=4
@@ -148,7 +102,6 @@ nnoremap <F9> :Black<CR>
 let g:black_linelength = 80
 let g:jedi#popup_on_dot = 0
 let g:jedi#smart_auto_mappings = 0
-
 
 " Ruby
 if has("autocmd")
@@ -173,20 +126,6 @@ set errorformat+=DEPRECATION\ WARNING:\ %m\ \(called\ %.%\\+\ %f:%l\)
 if has("autocmd")
   autocmd FileType tf set nowrap   " Terraform
 endif
-
-" Testing
-let test#strategy = "vimux"
-let g:test#echo_command = 0
-let g:test#preserve_screen = 1
-
-nmap <silent> <leader>Tn :TestNearest<CR>
-nmap <silent> <leader>Tf :TestFile<CR>
-nmap <silent> <leader>Ts :TestSuite<CR>
-nmap <silent> <leader>Tl :TestLast<CR>
-nmap <silent> <leader>Tv :TestVisit<CR>
-
-" language specific config
-let test#ruby#minitest#executable = 'docker compose exec web ruby -Itest'
 
 " Web
 if has("autocmd")
@@ -213,27 +152,6 @@ command! TagFiles :call EchoTags()
 function! EchoTags()
   echo join(split(&tags, ","), "\n")
 endfunction
-
-" Plugin configuration
-let g:ctrlp_map = '<Leader>t'
-let g:ctrlp_user_command = ['.git', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_working_path_mode = 'a'
-
-let g:ruby_indent_private_protected_style = 'indent'
-let g:yankring_history_dir = '~/.vim'
-
-" Fugitive
-nmap <leader>gs :G<CR>
-nmap <leader>gf :diffget //2<CR>
-nmap <leader>gj :diffget //2<CR>
-
-" Vimux
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
-map <Leader>vi :VimuxInspectRunner<CR>
-map <Leader>vq :VimuxCloseRunner<CR>
-map <Leader>vs :VimuxInterruptRunner<CR>
-map <Leader>vc :VimuxClearRunnerHistory<CR>
 
 " Automation
 if has("autocmd")
