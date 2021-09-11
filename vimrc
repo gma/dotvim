@@ -72,8 +72,8 @@ let mapleader = ","
 ""
 " From http://vimcasts.org/episodes/updating-your-vimrc-file-on-the-fly/
 " Quickly open the vim config file in a new tab.
-nnoremap <leader>ev :split $MYVIMRC<cr>
-nnoremap <leader>sv :source $MYVIMRC<cr>
+nnoremap <leader>ve :split $MYVIMRC<cr>
+nnoremap <leader>vs :source $MYVIMRC<cr>
 
 " Show whitespace
 set listchars=tab:>-,trail:·,eol:$,extends:#,nbsp:·
