@@ -46,8 +46,9 @@ set colorcolumn=81
 set cursorline
 
 let base16colorspace=256
-colorscheme base16-circus
-let g:airline_theme = 'base16_circus'
+let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
+execute('colorscheme ' . theme)
+let g:airline_theme = join(split(theme, '-'), '_')
 
 " Switch windows with Ctrl + a movement key
 nnoremap <C-h> <C-w>h
