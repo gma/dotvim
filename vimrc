@@ -50,6 +50,8 @@ let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
 execute('colorscheme ' . theme)
 let g:airline_theme = join(split(theme, '-'), '_')
 
+let g:netrw_banner = 0
+
 " Switch windows with Ctrl + a movement key
 nnoremap <C-h> <C-w>h
 nnoremap <C-j> <C-w>j
