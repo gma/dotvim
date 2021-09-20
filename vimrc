@@ -24,6 +24,8 @@ set incsearch               " incremental search
 set ignorecase              " case insensitive search...
 set smartcase               " ...unless you use a capital in your search
 
+set matchtime=2             " time to highlight matching parentheses (x 0.1s)
+
 set hidden                  " open multiple files in one 'window'
 set laststatus=2            " always show status bar
 set ruler                   " display the ruler at the bottom of the window
