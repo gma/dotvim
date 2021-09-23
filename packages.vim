@@ -39,6 +39,7 @@ function! PackInit() abort
   call minpac#add('tpope/vim-unimpaired')
   call minpac#add('vim-airline/vim-airline')
   call minpac#add('vim-airline/vim-airline-themes')
+  call minpac#add('fatih/vim-go')
   call minpac#add('vim-ruby/vim-ruby')
   call minpac#add('vim-scripts/YankRing.vim')
   call minpac#add('vim-scripts/indentpython.vim')
