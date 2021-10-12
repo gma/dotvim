@@ -15,13 +15,14 @@ Adding new plugins
 
 Plugins are installed as git submodules, and loaded using Vim 8's builtin
 support for packages. I am using the minpac plugin manager, but only as a
-convenient way of pulling down updates to my installed submodules.
+convenient way of updating plugins that I've already installed as git
+submodules.
 
-I prefer this approach to just using minpac to install the latest version of a
-plugin because:
+I prefer installing plugins as git submodules because:
 
-- I can test the new version of a plugin and rollback if there are breaking
-  changes, or if it's an inconvenient time for me to adopt a new version.
+- I can test the new version of a plugin and rollback more easily if there are
+  breaking changes, or if it's an inconvenient time for me to pause and learn
+  about changes to a plugin.
 
   I've found several plugins have changed their mappings and commands over the
   years that I've been using Vim, and it can take me a while to unlearn old
@@ -29,6 +30,8 @@ plugin because:
   and submodules make it extremely easy to roll back.
 
 - I know I've got the same versions of the submodules on all of my computers.
+  If I only used minpac to update submodules I'd likely get different versions
+  to my known-working config if/when I setup a new computer.
 
 I've written the `add-plugin` script to help me remember exactly what to do
 when adding a new plugin.
