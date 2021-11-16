@@ -10,6 +10,7 @@ function! PackInit() abort
   call minpac#add('fnune/base16-vim')
   call minpac#add('gabrielelana/vim-markdown')
   call minpac#add('hashivim/vim-terraform')
+  call minpac#add('itspriddle/vim-shellcheck')
   call minpac#add('jremmen/vim-ripgrep')
   call minpac#add('junegunn/goyo.vim')
   call minpac#add('kana/vim-textobj-user')
