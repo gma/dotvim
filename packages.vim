@@ -43,6 +43,7 @@ function! PackInit() abort
   call minpac#add('vim-ruby/vim-ruby')
   call minpac#add('vim-scripts/YankRing.vim')
   call minpac#add('vim-scripts/indentpython.vim')
+  call minpac#add('vim-test/vim-test')
 
   " Optional plugins, load them with `:packadd <name>`
 endfunction

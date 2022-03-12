@@ -118,3 +118,6 @@
 [submodule "pack/minpac/start/vim-shellcheck"]
 	path = pack/minpac/start/vim-shellcheck
 	url = https://github.com/itspriddle/vim-shellcheck.git
+[submodule "pack/minpac/start/vim-test"]
+	path = pack/minpac/start/vim-test
+	url = https://github.com/vim-test/vim-test.git

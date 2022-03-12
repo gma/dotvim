@@ -174,6 +174,20 @@ if has("autocmd")
   autocmd FileType tf set nowrap   " Terraform
 endif
 
+" Testing
+let test#strategy = "vimux"
+let g:test#echo_command = 0
+let g:test#preserve_screen = 1
+
+nmap <silent> <leader>Tn :TestNearest<CR>
+nmap <silent> <leader>Tf :TestFile<CR>
+nmap <silent> <leader>Ts :TestSuite<CR>
+nmap <silent> <leader>Tl :TestLast<CR>
+nmap <silent> <leader>Tv :TestVisit<CR>
+
+" language specific config
+let test#ruby#minitest#executable = 'docker compose exec web ruby -Itest'
+
 " Web
 if has("autocmd")
   autocmd FileType haml set nowrap
