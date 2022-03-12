@@ -58,9 +58,6 @@
 [submodule "pack/minpac/start/ansible-vim"]
 	path = pack/minpac/start/ansible-vim
 	url = https://github.com/pearofducks/ansible-vim
-[submodule "pack/minpac/start/vimux-ruby-test"]
-	path = pack/minpac/start/vimux-ruby-test
-	url = https://github.com/pgr0ss/vimux-ruby-test
 [submodule "pack/minpac/start/vim-vue"]
 	path = pack/minpac/start/vim-vue
 	url = https://github.com/posva/vim-vue

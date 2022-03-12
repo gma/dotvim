@@ -24,7 +24,6 @@ function! PackInit() abort
   call minpac#add('nelstrom/vim-textobj-rubyblock')
   call minpac#add('pangloss/vim-javascript')
   call minpac#add('pearofducks/ansible-vim')
-  call minpac#add('pgr0ss/vimux-ruby-test')
   call minpac#add('posva/vim-vue')
   call minpac#add('psf/black')
   call minpac#add('scrooloose/nerdcommenter')

@@ -165,9 +165,6 @@ au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
 set tags+=gems.tags
 
-let g:vimux_ruby_clear_console_on_run = 0
-nmap <LEADER>T :RunRubyFocusedTest<CR>
-
 " Parse Rails deprecation warnings from logs
 " (load them into quickfix window with `vi -q log`)
 set errorformat+=DEPRECATION\ WARNING:\ %m\ \(called\ %.%\\+\ %f:%l\)
