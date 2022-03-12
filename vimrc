@@ -229,8 +229,6 @@ nmap <leader>gj :diffget //2<CR>
 
 " Vimux
 map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vt :VimuxPromptCommand("ruby -Itest " . bufname("%"))<CR>
-map <Leader>dt :VimuxPromptCommand("docker-compose exec web ruby -Itest " . bufname("%"))<CR>
 map <Leader>vl :VimuxRunLastCommand<CR>
 map <Leader>vi :VimuxInspectRunner<CR>
 map <Leader>vq :VimuxCloseRunner<CR>
