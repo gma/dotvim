@@ -66,11 +66,15 @@ If it looks good, commit.
 
 If you encounter problems you can always roll back, then investigate later.
 
-To remove a plugin
-------------------
+Removing plugins
+----------------
 
-You need to [delete the submodule][delete], then remove the corresponding
-`minpac` config in `packages.vim`.
+You need to [delete the submodule][delete]. In recent versions of git this is
+as simple as:
+
+    $ git rm pack/minpack/start/<dir>
+
+Then remove the corresponding `minpac` config in `packages.vim`.
 
 [delete]: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
 
