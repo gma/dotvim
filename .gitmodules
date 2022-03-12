@@ -121,3 +121,9 @@
 [submodule "pack/minpac/start/vim-test"]
 	path = pack/minpac/start/vim-test
 	url = https://github.com/vim-test/vim-test.git
+[submodule "pack/minpac/start/fzf.vim"]
+	path = pack/minpac/start/fzf.vim
+	url = https://github.com/junegunn/fzf.vim
+[submodule "pack/minpac/start/fzf"]
+	path = pack/minpac/start/fzf
+	url = https://github.com/junegunn/fzf
