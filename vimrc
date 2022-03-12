@@ -100,8 +100,6 @@ if has("autocmd")
 endif
 nnoremap <F9> :Black<CR>
 let g:black_linelength = 80
-let g:jedi#popup_on_dot = 0
-let g:jedi#smart_auto_mappings = 0
 
 " Ruby
 if has("autocmd")

@@ -22,9 +22,6 @@
 [submodule "pack/minpac/start/vimux"]
 	path = pack/minpac/start/vimux
 	url = https://github.com/benmills/vimux
-[submodule "pack/minpac/start/jedi-vim"]
-	path = pack/minpac/start/jedi-vim
-	url = https://github.com/davidhalter/jedi-vim
 [submodule "pack/minpac/start/base16-vim"]
 	path = pack/minpac/start/base16-vim
 	url = https://github.com/fnune/base16-vim
