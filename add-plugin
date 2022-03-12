@@ -5,7 +5,7 @@
 usage()
 {
     cat <<EOF 1>&2
-Usage: $(basename $0) [OPTIONS] <url>
+Usage: $(basename "$0") [OPTIONS] <url>
 
 OPTIONS
         -o    Plugin is optional (use :packadd to load)
@@ -18,32 +18,36 @@ EOF
 repo_path()
 {
     local url=$1
-    local owner=$(basename $(dirname $url))
-    echo "$owner/$(repo_name $url)"
+    local owner
+    owner="$(basename "$(dirname "$url")")"
+    echo "$owner/$(repo_name "$url")"
 }
 
 
 repo_name()
 {
     local url=$1
-    basename $url .git
+    basename "$url" .git
 }
 
 
 toggling_optional_status()
 {
-    test -d "$PACKAGE/$ALTERNATE_PARENT/$(repo_name $URL)"
+    test -d "$PACKAGE/$ALTERNATE_PARENT/$(repo_name "$URL")"
 }
 
 
 vim_script()
 {
-    local template="  call minpac#add('%s'%s)"
+    local path
+    path="$(repo_path "$URL")"
+
+    local options=""
     if [ "$PARENT" = "opt" ]; then
-        printf "$template" $(repo_path $URL) ", {'type': 'opt'}"
-    else
-        printf "$template" $(repo_path $URL)
+        options=", {'type': 'opt'}"
     fi
+
+    printf "  call minpac#add('%s'%s)" "$path" "$options"
 }
 
 
@@ -64,6 +68,9 @@ while getopts ":o" OPT; do
             ALTERNATE_PARENT=start
             shift
             ;;
+        *)
+            usage
+            ;;
     esac
 done
 
@@ -71,9 +78,9 @@ done
 URL="$1"
 shift
 
-git submodule add $URL $PACKAGE/$PARENT/$(repo_name $URL)
+git submodule add "$URL" $PACKAGE/$PARENT/"$(repo_name "$URL")"
 if toggling_optional_status; then
-    git rm "$PACKAGE/$ALTERNATE_PARENT/$(repo_name $URL)"
+    git rm "$PACKAGE/$ALTERNATE_PARENT/$(repo_name "$URL")"
 fi
 
 cat <<EOF
