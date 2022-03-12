@@ -46,6 +46,26 @@ of code that they do load is useful for filetype detection.
 
 [loaded on demand]: https://vi.stackexchange.com/a/20818/37882
 
+Updating plugins
+----------------
+
+minpac makes this really easy. If it didn't, minpac wouldn't even be installed
+(I'd just be managing them all as submodules).
+
+Run the `:PackUpdate` Vim command. It'll pull updates for all installed
+packages.
+
+To read through the changes you've just downloaded, run `:PackStatus`. If there
+are any changes you're not keen on pulling in right now you can use `git` to
+rewind the changes in a plugin's submodule.
+
+If it looks good, commit.
+
+    $ git add pack/
+    $ git ci -m "Upgraded Vim plugins with minpac"
+
+If you encounter problems you can always roll back, then investigate later.
+
 To remove a plugin
 ------------------
 
