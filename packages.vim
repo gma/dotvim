@@ -58,3 +58,13 @@ endfunction
 command! PackUpdate call PackInit() | call minpac#update()
 command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus packadd minpac | call minpac#status()
+
+" fzf.vim config
+nmap <leader>ff :Files<cr>
+nmap <leader>fg :GFiles<cr>
+nmap <leader>fl :Lines<cr>
+nmap <leader>fL :BLines<cr>
+nmap <leader>fc :Commits<cr>
+nmap <leader>fC :BCommits<cr>
+nmap <leader>ft :Tags<cr>
+nmap <leader>fm :Maps<cr>

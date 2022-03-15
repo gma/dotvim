@@ -2,6 +2,8 @@ if &compatible
   set nocompatible
 endif
 
+let mapleader = ","
+
 " Plugins
 packadd! matchit
 source ~/.vim/packages.vim
@@ -65,8 +67,6 @@ cnoremap <expr> %% getcmdtype() == ':' ? expand('%:h').'/' : '%%'
 
 " Replace silversearcher with Ripgrep
 cnoreabbrev Ag Rg
-
-let mapleader = ","
 
 """ Make it easy to modify vim settings on the fly.
 ""
