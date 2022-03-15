@@ -40,9 +40,6 @@
 [submodule "pack/minpac/start/emmet-vim"]
 	path = pack/minpac/start/emmet-vim
 	url = https://github.com/mattn/emmet-vim
-[submodule "pack/minpac/start/snipmate.vim"]
-	path = pack/minpac/start/snipmate.vim
-	url = https://github.com/msanders/snipmate.vim
 [submodule "pack/minpac/start/vim-mustache-handlebars"]
 	path = pack/minpac/start/vim-mustache-handlebars
 	url = https://github.com/mustache/vim-mustache-handlebars
@@ -127,3 +124,6 @@
 [submodule "pack/minpac/start/fzf"]
 	path = pack/minpac/start/fzf
 	url = https://github.com/junegunn/fzf
+[submodule "pack/minpac/start/ultisnips"]
+	path = pack/minpac/start/ultisnips
+	url = https://github.com/SirVer/ultisnips
