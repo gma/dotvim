@@ -44,6 +44,9 @@ This is because they generally don't do much until you open a file of the
 relevant type, and are effectively [loaded on demand] anyway. The small amount
 of code that they do load is useful for filetype detection.
 
+After installing a new plugin run `:helptags ALL` to re-index Vim's links to
+your plugins' docs.
+
 [loaded on demand]: https://vi.stackexchange.com/a/20818/37882
 
 Updating plugins
@@ -66,6 +69,8 @@ If it looks good, commit.
 
 If you encounter problems you can always roll back, then investigate later.
 
+Run `:helptags ALL` to re-index Vim's links to your plugins' docs.
+
 Removing plugins
 ----------------
 
@@ -75,6 +80,8 @@ as simple as:
     $ git rm pack/minpack/start/<dir>
 
 Then remove the corresponding `minpac` config in `packages.vim`.
+
+`:helptags ALL` will re-index Vim's links to your plugins' docs.
 
 [delete]: https://stackoverflow.com/questions/1260748/how-do-i-remove-a-submodule
 
@@ -101,3 +108,5 @@ Then, back in the main repo, commit the changes:
 
     $ git add <module-path>
     $ git commit -m "Switch to Gabriele Lana's vim-markdown plugin"
+
+You may as well run `:helptags` to re-index the docs.
