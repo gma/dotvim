@@ -33,6 +33,7 @@ function! PackInit() abort
   call minpac#add('tpope/vim-endwise')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-git')
+  call minpac#add('tpope/vim-projectionist')
   call minpac#add('tpope/vim-rails')
   call minpac#add('tpope/vim-rake')
   call minpac#add('tpope/vim-repeat')
