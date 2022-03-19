@@ -38,8 +38,6 @@ nmap <silent> <leader>s :set nolist!<CR>
 
 nmap <LEADER>y :YRShow<CR>
 
-let NERDSpaceDelims=1
-
 " Text bubbling (http://vimcasts.org/episodes/bubbling-text/)
 nmap <C-Up> [e
 nmap <C-Down> ]e

@@ -27,7 +27,6 @@ function! PackInit() abort
   call minpac#add('pearofducks/ansible-vim')
   call minpac#add('posva/vim-vue')
   call minpac#add('psf/black')
-  call minpac#add('scrooloose/nerdcommenter')
   call minpac#add('sunaku/vim-ruby-minitest')
   call minpac#add('tpope/vim-bundler')
   call minpac#add('tpope/vim-endwise')
@@ -86,9 +85,6 @@ nmap <leader>fm :Maps<cr>
 " markdown
 nnoremap <leader>1 yypVr=
 nnoremap <leader>2 yypVr-
-
-" nerdcommenter
-let NERDSpaceDelims=1
 
 " vim-ruby
 let g:ruby_indent_private_protected_style = 'indent'

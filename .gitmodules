@@ -61,9 +61,6 @@
 [submodule "pack/minpac/start/black"]
 	path = pack/minpac/start/black
 	url = https://github.com/psf/black
-[submodule "pack/minpac/start/nerdcommenter"]
-	path = pack/minpac/start/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter
 [submodule "pack/minpac/start/vim-ruby-minitest"]
 	path = pack/minpac/start/vim-ruby-minitest
 	url = https://github.com/sunaku/vim-ruby-minitest
