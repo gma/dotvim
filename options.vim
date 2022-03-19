@@ -18,6 +18,7 @@ set matchtime=2             " time to highlight matching parentheses (x 0.1s)
 set scrolloff=5             " scroll buffer when cursor approaches top/bottom
 
 set hidden                  " open multiple files in one 'window'
+set autoread                " re-read files if they're changed on disk
 set laststatus=2            " always show status bar
 set ruler                   " display the ruler at the bottom of the window
 
