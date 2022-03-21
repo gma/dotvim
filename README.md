@@ -65,7 +65,7 @@ rewind the changes in a plugin's submodule.
 If it looks good, commit.
 
     $ git add pack/
-    $ git ci -m "Upgraded Vim plugins with minpac"
+    $ git commit -m "Upgraded Vim plugins with minpac"
 
 If you encounter problems you can always roll back, then investigate later.
 
