@@ -28,9 +28,6 @@
 [submodule "pack/minpac/start/vim-coffee-script"]
 	path = pack/minpac/start/vim-coffee-script
 	url = https://github.com/kchmck/vim-coffee-script
-[submodule "pack/minpac/start/ctrlp.vim"]
-	path = pack/minpac/start/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim
 [submodule "pack/minpac/start/vim-jinja"]
 	path = pack/minpac/start/vim-jinja
 	url = https://github.com/lepture/vim-jinja

@@ -16,7 +16,6 @@ function! PackInit() abort
   call minpac#add('junegunn/goyo.vim')
   call minpac#add('kana/vim-textobj-user')
   call minpac#add('kchmck/vim-coffee-script')
-  call minpac#add('kien/ctrlp.vim')
   call minpac#add('lepture/vim-jinja')
   call minpac#add('mattn/emmet-vim')
   call minpac#add('msanders/snipmate.vim')
@@ -62,11 +61,6 @@ let base16colorspace=256
 let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
 execute('colorscheme ' . theme)
 let g:airline_theme = join(split(theme, '-'), '_')
-
-" ctrlp
-let g:ctrlp_map = '<Leader>t'
-let g:ctrlp_user_command = ['.git', 'git --git-dir=%s/.git ls-files -oc --exclude-standard']
-let g:ctrlp_working_path_mode = 'a'
 
 " fugitive
 nmap <leader>gs :G<CR>
