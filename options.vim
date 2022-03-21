@@ -15,6 +15,7 @@ set ignorecase              " case insensitive search...
 set smartcase               " ...unless you use a capital in your search
 
 set matchtime=2             " time to highlight matching parentheses (x 0.1s)
+set scrolloff=5             " scroll buffer when cursor approaches top/bottom
 
 set hidden                  " open multiple files in one 'window'
 set laststatus=2            " always show status bar
