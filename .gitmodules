@@ -124,3 +124,6 @@
 [submodule "pack/minpac/start/vim-projectionist"]
 	path = pack/minpac/start/vim-projectionist
 	url = https://github.com/tpope/vim-projectionist.git
+[submodule "pack/minpac/start/vim-commentary"]
+	path = pack/minpac/start/vim-commentary
+	url = https://github.com/tpope/vim-commentary

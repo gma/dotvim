@@ -29,6 +29,7 @@ function! PackInit() abort
   call minpac#add('psf/black')
   call minpac#add('sunaku/vim-ruby-minitest')
   call minpac#add('tpope/vim-bundler')
+  call minpac#add('tpope/vim-commentary')
   call minpac#add('tpope/vim-endwise')
   call minpac#add('tpope/vim-fugitive')
   call minpac#add('tpope/vim-git')
