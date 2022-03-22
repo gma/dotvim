@@ -91,11 +91,11 @@ let g:test#preserve_screen = 1
 
 let test#ruby#minitest#executable = 'docker compose exec web ruby -Itest'
 
-nmap <silent> <leader>Tn :TestNearest<CR>
-nmap <silent> <leader>Tf :TestFile<CR>
-nmap <silent> <leader>Ts :TestSuite<CR>
-nmap <silent> <leader>Tl :TestLast<CR>
-nmap <silent> <leader>Tv :TestVisit<CR>
+nmap <silent> <leader>tn :TestNearest<CR>
+nmap <silent> <leader>tf :TestFile<CR>
+nmap <silent> <leader>ts :TestSuite<CR>
+nmap <silent> <leader>tl :TestLast<CR>
+nmap <silent> <leader>tv :TestVisit<CR>
 
 " vimux
 map <Leader>vp :VimuxPromptCommand<CR>
