@@ -68,7 +68,7 @@ nmap <leader>gf :diffget //2<CR>
 nmap <leader>gj :diffget //2<CR>
 
 " fzf.vim
-nnoremap <C-p>f :Files<cr>
+nnoremap <C-p> :Files<cr>
 nnoremap <leader>fg :GFiles<cr>
 nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>fl :BLines<cr>
