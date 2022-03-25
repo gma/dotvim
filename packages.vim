@@ -68,14 +68,14 @@ nmap <leader>gf :diffget //2<CR>
 nmap <leader>gj :diffget //2<CR>
 
 " fzf.vim
-nmap <leader>ff :Files<cr>
-nmap <leader>fg :GFiles<cr>
-nmap <leader>fl :Lines<cr>
-nmap <leader>fL :BLines<cr>
-nmap <leader>fc :Commits<cr>
-nmap <leader>fC :BCommits<cr>
-nmap <leader>ft :Tags<cr>
-nmap <leader>fm :Maps<cr>
+nnoremap <C-p>f :Files<cr>
+nnoremap <leader>fg :GFiles<cr>
+nnoremap <leader>b :Buffers<cr>
+nnoremap <leader>fl :BLines<cr>
+nnoremap <leader>fc :Commits<cr>
+nnoremap <leader>fC :BCommits<cr>
+nnoremap <leader>ft :Tags<cr>
+nnoremap <leader>fm :Maps<cr>
 
 " markdown
 nnoremap <leader>1 yypVr=
