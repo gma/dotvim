@@ -104,7 +104,3 @@ map <Leader>vi :VimuxInspectRunner<CR>
 map <Leader>vq :VimuxCloseRunner<CR>
 map <Leader>vs :VimuxInterruptRunner<CR>
 map <Leader>vc :VimuxClearRunnerHistory<CR>
-
-" YankRing
-nmap <leader>y :YRShow<CR>
-let g:yankring_history_dir = '~/.vim'

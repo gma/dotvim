@@ -97,9 +97,6 @@
 [submodule "pack/minpac/start/vim-ruby"]
 	path = pack/minpac/start/vim-ruby
 	url = https://github.com/vim-ruby/vim-ruby
-[submodule "pack/minpac/start/YankRing.vim"]
-	path = pack/minpac/start/YankRing.vim
-	url = https://github.com/vim-scripts/YankRing.vim
 [submodule "pack/minpac/start/indentpython.vim"]
 	path = pack/minpac/start/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim
