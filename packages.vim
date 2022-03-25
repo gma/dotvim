@@ -73,7 +73,9 @@ nnoremap <leader>fg :GFiles<cr>
 nnoremap <leader>b :Buffers<cr>
 nnoremap <leader>fl :BLines<cr>
 nnoremap <leader>fc :Commits<cr>
-nnoremap <leader>fC :BCommits<cr>
+nnoremap <leader>fb :BCommits<cr>
+nnoremap <leader>fC :Commands<cr>
+nnoremap <leader>fh :Helptags<cr>
 nnoremap <leader>ft :Tags<cr>
 nnoremap <leader>fm :Maps<cr>
 
