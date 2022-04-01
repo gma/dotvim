@@ -97,9 +97,6 @@
 [submodule "pack/minpac/start/indentpython.vim"]
 	path = pack/minpac/start/indentpython.vim
 	url = https://github.com/vim-scripts/indentpython.vim
-[submodule "pack/minpac/start/vim-go"]
-	path = pack/minpac/start/vim-go
-	url = https://github.com/fatih/vim-go.git
 [submodule "pack/minpac/start/vim-shellcheck"]
 	path = pack/minpac/start/vim-shellcheck
 	url = https://github.com/itspriddle/vim-shellcheck.git
