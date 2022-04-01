@@ -13,7 +13,6 @@ function! PackInit() abort
   call minpac#add('jremmen/vim-ripgrep')
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
-  call minpac#add('junegunn/goyo.vim')
   call minpac#add('kana/vim-textobj-user')
   call minpac#add('kchmck/vim-coffee-script')
   call minpac#add('lepture/vim-jinja')
