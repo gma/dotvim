@@ -14,7 +14,6 @@ function! PackInit() abort
   call minpac#add('junegunn/fzf')
   call minpac#add('junegunn/fzf.vim')
   call minpac#add('kana/vim-textobj-user')
-  call minpac#add('kchmck/vim-coffee-script')
   call minpac#add('lepture/vim-jinja')
   call minpac#add('mattn/emmet-vim')
   call minpac#add('msanders/snipmate.vim')
