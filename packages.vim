@@ -21,6 +21,7 @@ function! PackInit() abort
   call minpac#add('mxw/vim-jsx')
   call minpac#add('nelstrom/vim-textobj-rubyblock')
   call minpac#add('pangloss/vim-javascript')
+  call minpac#add('pantharshit00/vim-prisma')
   call minpac#add('pearofducks/ansible-vim')
   call minpac#add('posva/vim-vue')
   call minpac#add('psf/black')

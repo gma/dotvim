@@ -115,3 +115,6 @@
 [submodule "pack/minpac/start/vim-commentary"]
 	path = pack/minpac/start/vim-commentary
 	url = https://github.com/tpope/vim-commentary
+[submodule "pack/minpac/start/vim-prisma"]
+	path = pack/minpac/start/vim-prisma
+	url = https://github.com/pantharshit00/vim-prisma
