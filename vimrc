@@ -62,7 +62,7 @@ endif
 " Indentation
 if has("autocmd")
   autocmd FileType sh setlocal shiftwidth=4
-  autocmd FileType css setlocal shiftwidth=4
+  autocmd FileType css setlocal shiftwidth=2
   autocmd FileType elm setlocal shiftwidth=4
 endif
 
