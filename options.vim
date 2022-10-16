@@ -38,3 +38,5 @@ set wildignore=tmp/cache/**
 
 set colorcolumn=81
 set cursorline
+
+:set tags^=./.git/tags;
