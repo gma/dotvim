@@ -93,7 +93,7 @@ if has("autocmd")
   autocmd FileType python setlocal textwidth=0
   autocmd FileType python setlocal wrapmargin=0
   if filereadable(".use-black")
-    autocmd BufWritePre */Projects/*/*.py execute ':Black'
+    autocmd BufWritePre */Code/*/*.py execute ':Black'
   endif
 endif
 nnoremap <F9> :Black<CR>
