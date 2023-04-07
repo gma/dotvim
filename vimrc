@@ -100,6 +100,12 @@ if has("autocmd")
   if filereadable(".use-black")
     autocmd BufWritePre */Code/*/*.py execute ':Black'
   endif
+  if filereadable(".use-blue")
+    autocmd BufWritePre */Code/*/*.py
+          \   silent write
+          \ | call system('blue '..expand('<afile>:p:S'))
+          \ | edit!
+  endif
 endif
 nnoremap <F9> :Black<CR>
 let g:black_linelength = 80
