@@ -60,6 +60,11 @@ let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
 execute('colorscheme ' . theme)
 let g:airline_theme = join(split(theme, '-'), '_')
 
+" Disable italics for comments (as used in the base16-woodland theme),
+" which display as dark text on a reversed background in terminals that
+" can't render italics.
+highlight Comment cterm=NONE
+
 " fugitive
 nmap <leader>gs :G<CR>
 nmap <leader>gf :diffget //2<CR>
