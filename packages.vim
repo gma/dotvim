@@ -6,7 +6,7 @@ function! PackInit() abort
 
   " Plugins loaded at start
   call minpac#add('benmills/vimux')
-  call minpac#add('fnune/base16-vim')
+  call minpac#add('fnune/base16-vim', {'rev': 'main'})
   call minpac#add('gabrielelana/vim-markdown')
   call minpac#add('hashivim/vim-terraform')
   call minpac#add('itspriddle/vim-shellcheck')
