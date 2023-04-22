@@ -118,3 +118,6 @@
 [submodule "pack/minpac/start/vim-prisma"]
 	path = pack/minpac/start/vim-prisma
 	url = https://github.com/pantharshit00/vim-prisma
+[submodule "pack/minpac/start/undotree"]
+	path = pack/minpac/start/undotree
+	url = https://github.com/mbbill/undotree.git

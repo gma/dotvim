@@ -16,6 +16,7 @@ function! PackInit() abort
   call minpac#add('kana/vim-textobj-user')
   call minpac#add('lepture/vim-jinja')
   call minpac#add('mattn/emmet-vim')
+  call minpac#add('mbbill/undotree')
   call minpac#add('msanders/snipmate.vim')
   call minpac#add('mustache/vim-mustache-handlebars')
   call minpac#add('mxw/vim-jsx')
@@ -79,6 +80,9 @@ nnoremap <leader>fm :Maps<cr>
 " markdown
 nnoremap <leader>1 yypVr=
 nnoremap <leader>2 yypVr-
+
+" undotree
+nnoremap <F5> :UndotreeToggle<CR>
 
 " vim-ruby
 let g:ruby_indent_private_protected_style = 'indent'
