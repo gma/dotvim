@@ -53,8 +53,6 @@ if has("autocmd")
   filetype plugin indent on  " enable filetype detection
 endif
 
-filetype plugin on
-
 " Editing mail
 if has("autocmd")
   autocmd FileType mail setlocal wrap
