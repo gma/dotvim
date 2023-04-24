@@ -112,8 +112,6 @@ let g:black_linelength = 80
 if has("autocmd")
   autocmd FileType ruby setlocal wrapmargin=0
 end
-au BufRead,BufNewFile *.rabl setf ruby
-au BufRead,BufNewFile *.jbuilder setf ruby
 set completefunc=syntaxcomplete#Complete  " for vim-ruby-minitest
 set tags+=gems.tags
 
