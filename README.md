@@ -1,6 +1,11 @@
 My Vim Config
 =============
 
+**Note:** I use Neovim by default these days, but still keep this Vim 8 config
+around for use on computers where Neovim isn't installed. If you're looking at
+for inspiration on how to configure Vim for doing software development, I'd
+suggest my [nvim-config repository] instead.
+
 I install this repository to every computer I work on:
 
     $ git clone github@github.com:gma/dotvim.git ~/.vim
@@ -9,6 +14,8 @@ I install this repository to every computer I work on:
 Feel free to have a poke around, but (rather than copying it) I recommend
 building up your own Vim config by hand. You'll learn a lot more and are likely
 to end up with a setup that's just right for you.
+
+[nvim-config repository]: https://github.com/gma/nvim-config
 
 Adding new plugins
 ------------------
