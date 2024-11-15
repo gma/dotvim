@@ -6,7 +6,6 @@ function! PackInit() abort
 
   " Plugins loaded at start
   call minpac#add('benmills/vimux')
-  call minpac#add('fnune/base16-vim', {'rev': 'main'})
   call minpac#add('gabrielelana/vim-markdown')
   call minpac#add('hashivim/vim-terraform')
   call minpac#add('itspriddle/vim-shellcheck')
@@ -38,8 +37,6 @@ function! PackInit() abort
   call minpac#add('tpope/vim-repeat')
   call minpac#add('tpope/vim-surround')
   call minpac#add('tpope/vim-unimpaired')
-  call minpac#add('vim-airline/vim-airline')
-  call minpac#add('vim-airline/vim-airline-themes')
   call minpac#add('vim-ruby/vim-ruby')
   call minpac#add('vim-scripts/indentpython.vim')
   call minpac#add('vim-test/vim-test')
@@ -53,12 +50,6 @@ endfunction
 command! PackUpdate call PackInit() | call minpac#update()
 command! PackClean  call PackInit() | call minpac#clean()
 command! PackStatus packadd minpac | call minpac#status()
-
-" base16-theme and vim-airline-themes
-let base16colorspace=256
-let theme = 'base16-' . readfile(expand('~/.config/base16-theme'))[0]
-execute('colorscheme ' . theme)
-let g:airline_theme = join(split(theme, '-'), '_')
 
 " Disable italics for comments (as used in the base16-woodland theme),
 " which display as dark text on a reversed background in terminals that
